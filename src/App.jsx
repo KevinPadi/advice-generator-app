@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { IconDice } from "./assets/icons/IconDice";
 import { useState, useEffect } from "react";
-import { DividerPattern } from "./assets/icons/DividerPattern";
+// import { DividerPattern } from "./assets/icons/DividerPattern";
 
 function App() {
   const [data, setData] = useState(null);
@@ -58,7 +58,10 @@ function App() {
           align="center"
           pb={16}
         >
-          <Image src={<DividerPattern />} alt="Divider" />
+          <Image
+            src="/src/assets/images/pattern-divider-desktop.svg"
+            alt="Divider"
+          />
           <IconButton
             onClick={handleClick}
             bottom="-3rem"
